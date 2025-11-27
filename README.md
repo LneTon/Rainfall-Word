@@ -1,5 +1,5 @@
 
-# 🌧️ Rainfall Word
+# Rainfall Word
 
 I created Rainfall Word as a playful experiment connecting meteorology and surreal language. It mixes real-world data with AI imagery and interaction design to deliver an interactive web app that merges creative thinking with technical execution.
 
@@ -57,15 +57,9 @@ The result is displayed in a custom ResultCard.
 # Tech Stack
 
 # Frontend:
-React 19
-CSS animations
-Geolocation API
-Custom components (WordScroller, ResultCard, etc.)
+React 19, CSS animations, Geolocation API, Custom components (WordScroller, ResultCard, etc.)
 
 # Backend:
-Node.js
-Express
-VisualCrossing weather API
-DeepAI Text2Image
+Node.js, Express, VisualCrossing weather API, DeepAI Text2Image
 
 
