@@ -1,0 +1,74 @@
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 3em;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.fixed-word {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.word-area {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  gap: 1em;
+}
+
+.generate-btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: rgb(5, 5, 5);
+  color: white;
+  border-radius: 6px;
+  opacity: 0.9;
+}
+
+.generate-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.result-card {
+  margin-top: 20px;
+  padding: 20px;
+  /* border: 2px solid black; */
+  background: white;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.rain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: -5;
+}
+
+.rain-line {
+  position: absolute;
+  top: -150px;
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(117, 38, 38, 0.6));
+  animation-name: rainFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainFall {
+  0% { transform: translateY(-150px); }
+  100% { transform: translateY(120vh); }
+}
