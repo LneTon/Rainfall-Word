@@ -98,5 +98,15 @@
     margin: 0 auto;
     padding: 2em;
     width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+    .result-card {
+    margin: 0 auto;
+    padding: 2em;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
