@@ -20,14 +20,41 @@ function getLocation()
 {
     return new Promise((resolve, reject) => 
     {
-        navigator.geolocation.getCurrentPosition
+        if (!navigator.geolocation) 
+        {
+                return resolve ({
+                lat:52.5200, 
+                lon: 13.4050
+            });
+        }
+        
+        const options = 
+        {
+            enableHighAccuracy: true, 
+            timeout: 5000, 
+            maximumAge: 0
+        };
+
+        navigator.geolocation.getCurrentPosition 
         (
-            (pos) => resolve
-            ({
-            lat: pos.coords.latitude,
-            lon: pos.coords.longitude
-            }), 
-            () => reject("Permission denied")
+            (pos) => 
+            {
+                resolve
+                ({
+                    lat: pos.coords.latitute,
+                    lon: pos.coords.longitute
+                });
+            },
+            (err) => 
+            {
+                console.warn("Geolocation failed:", err);
+                resolve 
+                ({
+                    lat:52.5200, 
+                    lon:13.4050
+                });
+            },
+            options
         );
     });
 }

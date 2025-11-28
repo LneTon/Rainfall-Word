@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import FormData from "form-data";
+// import FormData from "form-data";
 
 dotenv.config();
 
@@ -12,6 +12,9 @@ app.use(cors({
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type", "api-key"]
 }));
+
+app.options("/generate-image", cors());
+app.options("/api/rainfall", cors());
 
 app.use(express.json());
 
@@ -33,7 +36,7 @@ app.post("/generate-image", async (req, res) =>
                 method: "POST",
                 headers: 
                 {
-                    "api-key": process.env.DEEPAI_KEY
+                    "api-key": process.env.DEEPAI_KEY,
                 },
                 body: form
             });
@@ -42,8 +45,8 @@ app.post("/generate-image", async (req, res) =>
 
         if (!data.output_url) 
         {
-          console.error("DeepAI error:", data);
-          return res.status(500).json({ error: "DeepAI failed" });
+          console.error("DEEPAI ERROR:", data);
+          return res.status(500).json({ error: "DEEP FAILED" });
         }
         res.json({
           type: "image",
@@ -57,9 +60,12 @@ app.post("/generate-image", async (req, res) =>
     }
 });
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT;
 
-app.listen(PORT, () => {console.log ("Server running on port:", PORT);});
+app.listen(PORT, () => 
+{
+  console.log("running on port:", PORT);
+});
 
 
 app.get("/api/rainfall", async (req, res) => 
