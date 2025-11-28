@@ -18,7 +18,9 @@ This creates a playful intersection of meteorology, imagination, and visual stor
 # Live Demo
 
 Demo: https://vercel.com/eleni-s-projects/rainfall-word
+
 GitHub (Frontend): https://github.com/yourname/rainfall-words
+
 GitHub (Backend): https://github.com/yourname/rainfall-words-server
 
 # Features
