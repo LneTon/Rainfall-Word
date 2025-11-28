@@ -97,17 +97,19 @@
 
   .result-card {
     margin: 0 auto;
-    padding: 2em 2em;
-    width: 70%;
+    padding: 2em;
+    width: 100%;
+    max-width: 600px;
     box-sizing: border-box;
   }
 }
 
 @media (max-width: 480px) {
-    .result-card {
-    margin: 0 auto;
-    padding: 2em;
-    width: 50%;
+
+    .result-card 
+    {
+    width: 100%;
+    max-width: 90%;
     box-sizing: border-box;
-  }
+    }
 }
