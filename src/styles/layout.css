@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 .fixed-word {
@@ -96,8 +97,8 @@
 
   .result-card {
     margin: 0 auto;
-    padding: 2em;
-    width: 100%;
+    padding: 2em 2em;
+    width: 70%;
     box-sizing: border-box;
   }
 }
@@ -106,7 +107,7 @@
     .result-card {
     margin: 0 auto;
     padding: 2em;
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
   }
 }
