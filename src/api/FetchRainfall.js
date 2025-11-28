@@ -1,7 +1,7 @@
 export async function FetchRainfall(mode) 
 {
     const { lat, lon } = await getLocation();
-    const resp = await fetch(`/api/rainfall?lat=${lat}&lon=${lon}&mode=${mode}`);
+    const resp = await fetch(`https://rainfall-words-server-production.up.railway.app/api/rainfall?lat=${lat}&lon=${lon}&mode=${mode}`);
     const data = await resp.json();
 
     return {

@@ -1,6 +1,6 @@
 export async function GenerateImage(word) 
 {
-    const response = await fetch("http://localhost:5001/generate-image", 
+    const response = await fetch("https://rainfall-words-server-production.up.railway.app/generate-image", 
     {
         method: "POST",
         headers: 
