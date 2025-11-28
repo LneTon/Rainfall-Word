@@ -5,7 +5,7 @@ I created Rainfall Word as a playful experiment connecting meteorology and surre
 
 # Overview
 
-Rainfall Words is an interactive app where the user locks a word (“storm”, “kinky”, “banana”, “last 2 weeks”, “last year”), and the system responds in one of two ways:
+Rainfall Words is an interactive app where the user locks a word (“last month”, “midnight”, “banana”, “last 2 weeks”, “sunset”), and the system responds in one of two ways:
 
 🔹 If the word is a time period:
 → Fetch real rainfall data for the user’s exact location (using geolocation + VisualCrossing API) and compute totals (weekly, yearly, monthly).
@@ -17,7 +17,7 @@ This creates a playful intersection of meteorology, imagination, and visual stor
 
 # Live Demo
 
-Demo: https://your-live-demo-link
+Demo: https://vercel.com/eleni-s-projects/rainfall-word
 GitHub (Frontend): https://github.com/yourname/rainfall-words
 GitHub (Backend): https://github.com/yourname/rainfall-words-server
 
