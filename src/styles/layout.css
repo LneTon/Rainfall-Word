@@ -47,6 +47,15 @@
   max-width: 100%;
 }
 
+.result-card img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 .rain {
   position: fixed;
   top: 0;
@@ -76,18 +85,18 @@
 @media (max-width: 600px) {
 
   .fixed-word {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .word-area {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 0.7rem;
   }
 
   .app-layout {
-    gap: 1.5rem;
-    padding-top: 1rem;
+    gap: 1rem;
+    padding-top: 0.5rem;
   }
 
   .generate-btn {
@@ -96,19 +105,17 @@
   }
 
   .result-card {
-    margin: 0;
-    padding: 3em;
-    max-width: 500px;
-    box-sizing: border-box;
+    padding: 1.5em;
+    width: 90%;
+    max-width: 400px;
   }
 }
 
 @media (max-width: 480px) {
 
-    .result-card 
-    {
-    margin: 0;
-    max-width: 300px;
-    box-sizing: border-box;
-    }
+  .result-card {
+    padding: 1.2em;
+    width: 90%;
+    max-width: 320px;
+  }
 }
