@@ -96,10 +96,9 @@
   }
 
   .result-card {
-    margin: 0 auto;
-    padding: 2em;
-    width: 100%;
-    max-width: 600px;
+    margin: 0;
+    padding: 3em;
+    max-width: 500px;
     box-sizing: border-box;
   }
 }
@@ -108,8 +107,7 @@
 
     .result-card 
     {
-    margin: 0 auto;
-    width: 90%;
+    margin: 0;
     max-width: 300px;
     box-sizing: border-box;
     }
