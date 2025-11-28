@@ -22,3 +22,9 @@
   transform: translateY(-20px); 
   opacity: 0;             
 }
+
+@media (max-width: 600px) {
+    .scroller-word {
+        font-size: 2.9rem;
+    }
+}
