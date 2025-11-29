@@ -7,7 +7,7 @@ const WORDS =
     "whirlpool", "banana", "future", "last month", "midnight",
     "sunset", "doubt", "bubble", "serenity", "cloud", "this week", "happiness", 
     "gymnastics","humanoid", "desert",
-    "nocturnal", "muscle", "devourness", "bow", "bread", 
+    "nocturnal", "iglo", "devourness", "bow", "bread", 
     "dreamy", "darling",  "tender", "admiration", 
 ];
 
