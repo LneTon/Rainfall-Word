@@ -1,7 +1,7 @@
 export async function FetchRainfall(mode) 
 {
     const { lat, lon } = await getLocation();
-    const resp = await fetch(`https://rainfall-words-server-production.up.railway.app/api/rainfall?lat=${lat}&lon=${lon}&mode=${mode}`);
+    const resp = await fetch(`https://rainfall-words-server-production.up.railway.app?lat=${lat}&lon=${lon}&mode=${mode}`);
     const data = await resp.json();
 
     return {
@@ -20,41 +20,24 @@ function getLocation()
 {
     return new Promise((resolve, reject) => 
     {
-        if (!navigator.geolocation) 
-        {
-                return resolve ({
-                lat:52.5200, 
-                lon: 13.4050
-            });
-        }
-        
-        const options = 
-        {
-            enableHighAccuracy: true, 
-            timeout: 5000, 
-            maximumAge: 0
-        };
-
-        navigator.geolocation.getCurrentPosition 
+        navigator.geolocation.getCurrentPosition
         (
             (pos) => 
             {
                 resolve
                 ({
-                    lat: pos.coords.latitute,
-                    lon: pos.coords.longitute
+                    lat: pos.coords.latitude,
+                    lon: pos.coords.longitude
                 });
             },
-            (err) => 
-            {
-                console.warn("Geolocation failed:", err);
+            () => 
+            { 
                 resolve 
                 ({
-                    lat:52.5200, 
-                    lon:13.4050
+                    lat: 51.2133,
+                    lon: 13.2320
                 });
-            },
-            options
+            }
         );
     });
 }
