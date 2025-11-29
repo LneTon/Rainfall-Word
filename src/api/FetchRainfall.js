@@ -29,14 +29,7 @@ function getLocation()
                     lat: pos.coords.latitude,
                     lon: pos.coords.longitude
                 });
-            },
-            () => 
-            { 
-                resolve 
-                ({
-                    lat: 51.2133,
-                    lon: 13.2320
-                });
+            () => reject("Permission denied")
             }
         );
     });
