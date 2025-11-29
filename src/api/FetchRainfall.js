@@ -1,7 +1,7 @@
 export async function FetchRainfall(mode) 
 {
     const { lat, lon } = await getLocation();
-    const resp = await fetch(`https://rainfall-words-server-production.up.railway.app?lat=${lat}&lon=${lon}&mode=${mode}`);
+    const resp = await fetch(`https://rainfall-words-server-production.up.railway.app/api/rainfall?lat=${lat}&lon=${lon}&mode=${mode}`);
     const data = await resp.json();
 
     return {
@@ -29,7 +29,14 @@ function getLocation()
                     lat: pos.coords.latitude,
                     lon: pos.coords.longitude
                 });
-            () => reject("Permission denied")
+            },
+            () => 
+            { 
+                resolve
+                ({
+                    lat: 51.2133,
+                    lon: 13.2320
+                });
             }
         );
     });
