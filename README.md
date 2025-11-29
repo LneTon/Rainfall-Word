@@ -64,3 +64,6 @@ React 19, CSS animations, Geolocation API, Custom components (WordScroller, Resu
 Node.js, Express, VisualCrossing weather API, DeepAI Text2Image
 
 
+<img width="1004" height="620" alt="Screenshot 2025-11-29 at 15 48 18" src="https://github.com/user-attachments/assets/89714193-945b-4280-af53-cdd15f05df64" />
+<img width="1233" height="773" alt="Screenshot 2025-11-29 at 15 48 53" src="https://github.com/user-attachments/assets/7ea304c7-f896-4483-8735-4b20f9b899dc" />
+<img width="1120" height="780" alt="Screenshot 2025-11-29 at 15 52 08" src="https://github.com/user-attachments/assets/b9f3d5b7-253c-4acf-b0f5-4de4661c0a0e" />
